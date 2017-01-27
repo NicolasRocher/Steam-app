@@ -10,12 +10,14 @@ import { JeuxService } from '../jeux.service';
 
 export class JeuDetailsComponent implements OnInit {
   categories: any;
+  jeux: any;
 
-  constructor(private category: JeuxService) { 
+  constructor(private category: JeuxService, private games: JeuxService) { 
   }
 
   ngOnInit() {
-    this.categories = this.category.getJeux();
+    this.categories = this.category.getGenre();
+    this.jeux = this.games.getJeux();
     
   }
 
