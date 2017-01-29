@@ -19,6 +19,9 @@ export class JeuDetailsComponent implements OnInit {
     this.categories = this.category.getGenre();
     this.jeux = this.games.getJeux();
     
+}
+  getGenreNameWithGame(game) {
+    let result = game.genres.map(id => this.categories.find(genre => genre.id == id).name);
+    return result.join(", ");
   }
-
 }

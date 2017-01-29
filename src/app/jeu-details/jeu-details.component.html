@@ -1,8 +1,6 @@
-<div *ngFor="let cat of categories">
-  <h2>ID : {{ cat.id }}</h2>
-  <h3>Name : {{ cat.name }}</h3>
-</div>
+
 <div *ngFor="let gam of jeux">
-  <h2>ID : {{ gam.name }}</h2>
-  <h3>Name : {{ gam.summary }}</h3>
+  <img  src="{{gam['cover']['url']}}">
+  <h2>{{  getGenreNameWithGame(gam)  }}</h2>
+  <h3>Résumé :  {{ gam.summary }}</h3>
 </div>
