@@ -1,6 +1,15 @@
 
-<div *ngFor="let gam of jeux">
-  <img  src="{{gam['cover']['url']}}">
-  <h2>{{  getGenreNameWithGame(gam)  }}</h2>
-  <h3>Résumé :  {{ gam.summary }}</h3>
+  <br>  <br>
+<h1>Liste des jeux</h1>
+
+
+<div *ngFor="let gam of jeux" >
+  <div class=" col-xs-12 text-center"><img  src="{{gam['cover']['url']}}">
+  <h3>    {{gam.name}}  </h3>
+  <h4>Genre : {{  getGenreNameWithGame(gam)  }}</h4>
+  <p>Description du jeu :  {{ gam.summary | slice:0:300 }}...</p>
+
+
+    <a class="fiche" href="" [routerLink]="['/boutique', gam.id]">Fiche complète du jeu</a>
+  </div>
 </div>

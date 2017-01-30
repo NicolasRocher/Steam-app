@@ -1,0 +1,25 @@
+/* PARALAXE */
+.scene {
+  left: 0;
+  overflow: hidden;
+  right: 0;
+  height: 500px;
+  background: url("http://i.imgur.com/5PXf7QZ.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.HeroH1 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: #222 1px 1px 5px; }
+
+.Herop {
+  color: white;
+  text-shadow: #000 1px 1px 5px;
+  font-weight: bold; }
+
+.centreP {
+  top: 35%;
+  text-align: center;
+  position: relative; }
